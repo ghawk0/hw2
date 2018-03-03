@@ -1,0 +1,56 @@
+George Hawk
+March 2, 2018
+
+
+Description of Programs
+  testurl.sh - takes a list of urls and tell you which ones don't work
+  backup.sh - saves files to a backup if they have been changed
+  diskhog.sh - lists the five biggest items in the current directory
+  linecount.sh - reports the total number of lines in all current files
+  gradeit.sh - checks if my diamond and rot128 differ from hoyle's
+
+
+Part 6 Questions
+     1. 21790 Male
+        10771 Female
+	% cat adult.data | cut -d ',' -f10 | sort | uniq -c
+
+     2. 24720  <=50K
+        7841  >50K
+        % cat adult.data | cut -d ',' -f15 | sort | uniq -c	  
+
+     3. 27816  White
+        3124  Black
+	1039  Asian-Pac-Islander
+	311  Amer-Indian-Eskimo
+	271  Other
+	% cat adult.data | cut -d ',' -f9 | sort | uniq -c | sort -gr
+
+     4. 19174  White, Male
+        8642  White, Female
+	1569  Black, Male
+        1555  Black, Female
+	693  Asian-Pac-Islander, Male
+	346  Asian-Pac-Islander, Female
+	192  Amer-Indian-Eskimo, Male
+	162  Other, Male
+	119  Amer-Indian-Eskimo, Female
+	109  Other, Female
+	% cat adult.data | cut -d ',' -f9.10 | sort | uniq -c | sort -gr
+	
+
+Time Estimates
+  testurl.sh: 3hr
+  backup.sh: 2hr	
+  diskhog.sh: 2hr
+  linecount.sh: 1.5hr
+  gradeit.sh: 3hr
+  data analysis: 0.5hr
+
+
+Bugs
+  None that I know of.
+
+
+
+       	   I affirm that I adhered to the honor code in this assignment
